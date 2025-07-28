@@ -1,0 +1,4 @@
+
+USE MASTER
+
+CREATE DATABASE Guia1_1_Ejercicio2
