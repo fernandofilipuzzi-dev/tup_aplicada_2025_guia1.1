@@ -5,7 +5,10 @@
 
  USE Guia1_1_Ejercicio1;
 
- SELECT * 
- FROM Alumnos
- WHERE Nota > (SELECT AVG(Nota) FROM Alumnos)
- ORDER BY LU DESC
+SELECT COUNT(*) Cantidad, AVG(Nota) Promedio
+FROM Alumnos
+ 
+SELECT * 
+FROM Alumnos
+WHERE Nota > (SELECT AVG(Nota) FROM Alumnos)
+ORDER BY LU DESC
