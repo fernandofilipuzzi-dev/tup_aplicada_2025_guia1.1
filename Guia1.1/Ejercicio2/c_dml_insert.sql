@@ -1,25 +1,41 @@
 
 USE Guia1_1_Ejercicio2
 
-DELETE FROM Tipos_Transporte
-DELETE FROM Encuestas
+GO
+
+DELETE FROM Encuestas;
+--necesito resetear el generador de pk
+--DBCC CHECKIDENT ('Encuestas', RESEED, 1)
 
 GO
 
-INSERT INTO Tipos_Transporte(Id, Descripcion)
-VALUES
-(1, 'Caminando'),
-(2, 'Bicleta'),
-(3, 'Motocicleta'),
-(4, 'Automóvil'),
-(5, 'Transporte público' )
+DELETE FROM Tipos_Transporte;
+--necesito resetear el generador de pk
+--DBCC CHECKIDENT ('Tipos_Transporte', RESEED, 1)
 
+GO
 
-INSERT INTO Encuestas(Id, Id_Tipo_Transporte, Email, 
-Distancia_Recorrida, Domicilio_Origen, Domicilio_Destino)
+INSERT INTO Tipos_Transporte( Descripcion)
 VALUES
-(1 , 1, 'daniela@gmail.com', 4.00, 'Luis Pasteur, 128', 'Almafuerte, 1033'),
-(2 , 2, 'andres@gmail.com', 8.50, 'Federación, 456', 'División de los andes, 1520')
+('Caminando'),
+('Bicleta'),
+('Motocicleta'),
+('Automóvil'),
+('Transporte público' )
+
+select * from Tipos_Transporte
+
+GO
+
+INSERT INTO Encuestas( Id_Tipo_Transporte, Email, Distancia_Recorrida, Domicilio_Origen, Domicilio_Destino)
+VALUES
+(1, 'daniela@gmail.com', 4.00, 'Luis Pasteur, 128', 'Almafuerte, 1033'),
+(2, 'andres@gmail.com', 8.50, 'Federación, 456', 'División de los andes, 1520'),
+(5, 'estefania@gmail.com', 6.60, 'Las Lechiguanas, 50', 'Almafuerte, 1033'),
+(2, 'ramon@gmail.com', 2.50, 'Pronvincias unidas, 864', 'División de los andes, 1520'),
+(4, 'adrian@gmail.com', 10.00, 'Buenos Aires, 100', 'Almafuerte, 1033'),
+(3, 'mariaflorencia@gmail.com', 3.20, 'Victoria, 146', 'División de los andes, 1520'),
+(3, 'mariavirginia@gmail.com', 3.40, '3 de Febrero, 666', 'Almafuerte, 1033')
 
 
 SELECT * FROM Encuestas

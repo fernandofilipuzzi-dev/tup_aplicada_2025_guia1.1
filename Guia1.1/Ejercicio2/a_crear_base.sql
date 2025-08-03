@@ -1,4 +1,12 @@
 
 USE MASTER
 
-CREATE DATABASE Guia1_1_Ejercicio2
+GO
+
+DROP DATABASE IF EXISTS Guia1_1_Ejercicio2;
+
+GO
+
+CREATE DATABASE Guia1_1_Ejercicio2;
+
+GO
