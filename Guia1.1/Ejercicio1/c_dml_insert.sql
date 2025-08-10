@@ -1,7 +1,9 @@
---c- Insertar el siguiente listado
 
+--c- Insertar el siguiente listado
  
- USE Guia1_1_Ejercicio1;
+ USE Guia1_1_Ejercicio1_DB;
+
+GO
 
  INSERT INTO Alumnos (LU, Nombre, Nota)
  VALUES

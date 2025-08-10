@@ -1,7 +1,7 @@
 -- f- Liste aquellos Alumnos que contengan en su nombre la palabra “on”, 
 -- ignore los acentos y las mayúsculas/minúsculas.
 
- USE Guia1_1_Ejercicio1;
+ USE Guia1_1_Ejercicio1_DB;
 
 SELECT *
 FROM Alumnos

@@ -2,7 +2,7 @@
 --con la menor nota del listado que superaron el 
 --promedio
 
- USE Guia1_1_Ejercicio1;
+ USE Guia1_1_Ejercicio1_DB;
 
 SELECT TOP 1 *
 FROM Alumnos

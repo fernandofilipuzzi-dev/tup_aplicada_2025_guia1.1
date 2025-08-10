@@ -1,5 +1,6 @@
 
+USE Guia1_1_Ejercicio2_DB;
 
-USE Guia1_1_Ejercicio2;
+GO
 
 SELECT COUNT(*) FROM Encuestas

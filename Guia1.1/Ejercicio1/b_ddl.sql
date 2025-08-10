@@ -1,5 +1,5 @@
 
- USE Guia1_1_Ejercicio1;
+ USE Guia1_1_Ejercicio1_DB;
 
  GO
 

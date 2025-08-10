@@ -1,9 +1,13 @@
 
+USE Guia1_1_Ejercicio1_DB;
+
+GO
+
 --d- Liste aquellos alumnos que superaron el promedio 
 --de todas las notas, ordenados por número libreta de
 -- mayor a menor.
 
- USE Guia1_1_Ejercicio1;
+ USE Guia1_1_Ejercicio1_DB;
 
 SELECT COUNT(*) Cantidad, AVG(Nota) Promedio
 FROM Alumnos

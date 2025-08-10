@@ -1,5 +1,5 @@
 
-USE Guia1_1_Ejercicio2
+USE Guia1_1_Ejercicio2_DB
 
 GO
 
